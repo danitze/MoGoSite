@@ -50,7 +50,8 @@ h5 {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -68,13 +69,12 @@ nav {
     margin-top: 15px;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 50px;
-}
-
-nav li:last-child {
-    margin-right: 0;
+nav ul {
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+    flex-wrap: wrap;
+    list-style-type: none;
 }
 
 nav a {
@@ -142,7 +142,7 @@ nav a:hover {
 
 .about_us p {
     text-align: center;
-    width: 970px;
+    width: 79.16%;
     margin: 0 auto;
     font-family: Arial, sans-serif;
     font-size: 15px;
@@ -156,10 +156,6 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     margin-bottom: 85px;
-}
-
-.about_us_img img {
-    flex-basis: 20%;
 }
 
 .about_us_img img:last-child {
