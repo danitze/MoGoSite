@@ -49,12 +49,6 @@ h5 {
     padding-bottom: 230px;
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -62,15 +56,15 @@ h5 {
 
 .navbar img {
     width: 60px;
-    float: left;
 }
 
 .navbar {
     padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav {
-    float: right;
     margin-top: 15px;
 }
 
@@ -159,14 +153,13 @@ nav a:hover {
 }
 
 .about_us_img {
-    margin: 0 auto;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 85px;
 }
 
 .about_us_img img {
-    margin-right: 25px;
-    width: 380px;
+    flex-basis: 20%;
 }
 
 .about_us_img img:last-child {
@@ -177,32 +170,19 @@ nav a:hover {
     background-color: #f8f8f8;
 }
 
+.services_item {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 26.6%;
+}
+
 .services_items {
-    margin: 0 auto;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 100px;
     padding-top: 60px;
     padding-bottom: 130px;
-}
-
-.services_items_row {
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-.services_items_row:last-child {
-    margin-bottom: 0;
-}
-
-.services_item {
-    margin: 0 auto;
-    text-align: center;
-    display: inline-block;
-    margin-right: 70px;
-}
-
-.services_item:last-child {
-    margin-right: 0;
 }
 
 .services_icon {
@@ -216,7 +196,6 @@ nav a:hover {
     font-size: 15px;
     line-height: 24px;
     color: #999999;
-    width: 280px;
     text-align: left;
     display: inline-block;
     vertical-align: top;
